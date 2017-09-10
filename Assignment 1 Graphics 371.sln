@@ -1,15 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DDC64647-A7E2-4E90-8E02-FD4F5D9DD3CA}"
 	ProjectSection(SolutionItems) = preProject
-		Script1.js = Script1.js
+		assignment1.html = assignment1.html
+		assignment1.js = assignment1.js
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D798FB9-2247-453C-A6FF-A06672F16AFC}
 	EndGlobalSection
 EndGlobal
