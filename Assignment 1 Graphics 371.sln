@@ -9,9 +9,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		assignment1.js = assignment1.js
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{C793921C-91F9-4F2D-A88C-86AB6D6470CE}"
+	ProjectSection(SolutionItems) = preProject
+		Common\initShaders.js = Common\initShaders.js
+		Common\initShaders2.js = Common\initShaders2.js
+		Common\MV.js = Common\MV.js
+		Common\MV2.js = Common\MV2.js
+		Common\README.txt = Common\README.txt
+		Common\webgl-debug.js = Common\webgl-debug.js
+		Common\webgl-utils.js = Common\webgl-utils.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C793921C-91F9-4F2D-A88C-86AB6D6470CE} = {DDC64647-A7E2-4E90-8E02-FD4F5D9DD3CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1D798FB9-2247-453C-A6FF-A06672F16AFC}

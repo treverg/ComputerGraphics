@@ -12,11 +12,26 @@ window.onload = function init() {
     }
 
     // Four 2D Vertices using Angel/Shreiner utility class vac2
+    //var vertices = [
+    //    vec2(-0.5, -0.5), //original
+    //    vec2(-0.7, 0),
+    //    vec2(-0.5, 0.5), //original
+    //    vec2(0, 0.7),
+    //    vec2(0.5, 0.5), //original
+    //    vec2(0.7, 0.0),
+    //    vec2(0.5, -0.5), //original
+    //    vec2(0, -0.7)
+    //];
+
     var vertices = [
-        vec2(-0.5, -0.5),
-        vec2(-0.5, 0.5),
-        vec2(0.5, 0.5),
-        vec2(0.5, -0.5)
+        vec2(-0.5, -0.5), //original
+        vec2(-0.7, 0),
+        vec2(-0.5, 0.5), //original
+        vec2(0, 0.7),
+        vec2(0.5, 0.5), //original
+        vec2(0.7, 0.0),
+        vec2(0.5, -0.5), //original
+        vec2(0, -0.7)
     ];
 
 
@@ -56,10 +71,11 @@ window.onload = function init() {
     );
     gl.enableVertexAttribArray(vPosition);
 
+    console.log(vertices.length);
     render();
 };
 
 function render() {
     gl.clear(gl.COLOR_BUFFER_BIT);
-    gl.drawArrays(gl.TRIANGLE_FAN, 0, 4);
+    gl.drawArrays(gl.TRIANGLE_FAN, 0, 8);
 }
