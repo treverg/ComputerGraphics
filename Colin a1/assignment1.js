@@ -30,7 +30,7 @@ window.onload = function init() {
 
 
     // Configure WebGL
-    gl.clearColor(0, 0, 0, 1);
+    gl.clearColor(255, 255, 255, 1.0);
 
     // Load shaders and initialize attribute buffers using A/S utility initShaders
     var program = initShaders(gl, "vertex-shader", "fragment-shader");
@@ -70,7 +70,7 @@ function render() {
     gl.drawArrays(gl.TRIANGLE_FAN, 0, vertices.length);*/
 	for(var j = 0; j < 4; j++){
 		for(var i = 0; i < 6; i++){
-			gl.viewport((canvas.width / 6) * i - 42, 42 + (canvas.height / 6) * j, canvas.width / 3, canvas.height / 3);
+			gl.viewport((canvas.width / 6) * i, (canvas.height / 6) * j, canvas.width / 3, canvas.height / 3);
 			gl.drawArrays(gl.TRIANGLE_FAN, 0, vertices.length);
 		}
 	}
